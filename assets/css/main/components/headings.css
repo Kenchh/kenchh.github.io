@@ -1,0 +1,101 @@
+/************************** 
+*  Import style
+***************************/
+/************************** 
+* Main Color
+***************************/
+/* 1-  Color */
+/* 2-  Background */
+/* 3-  Border */
+/* Alert */
+/************************** 
+* Dark Home Page one
+***************************/
+/************************** 
+* Light Home Page one
+***************************/
+/************************** 
+* List Color
+***************************/
+/************************** 
+* Border Resume
+***************************/
+/************************** 
+* Main Fonts
+***************************/
+/************************** 
+* Float fixing
+***************************/
+/************************** 
+* Text Align
+***************************/
+/************************** 
+* Font-weight
+***************************/
+/************************** 
+* Transition
+***************************/
+.transition {
+  -webkit-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important; }
+
+/************************** 
+* Box Shadow
+***************************/
+.box-shadownone {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/************************** 
+* Box Sizing
+***************************/
+.box-sizing {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/************************** 
+* Transition Transforme
+***************************/
+.transTransforme {
+  -webkit-transition: transform 330ms ease-out;
+  -moz-transition: transform 330ms ease-out;
+  -o-transition: transform 330ms ease-out;
+  transition: transform 330ms ease-out; }
+
+/************************** 
+* Media Queries
+***************************/
+/************************** 
+* General Style
+***************************/
+.section-title {
+  margin-bottom: 70px;
+  text-align: left !important; }
+  .section-title h2 {
+    position: relative;
+    display: inline-block;
+    color: #9da1a5;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px; }
+    .section-title h2:before, .section-title h2:after {
+      content: "";
+      height: 4px;
+      display: inline-block;
+      position: absolute;
+      bottom: -10px; }
+    .section-title h2:before {
+      width: 30px;
+      right: 19px;
+      border-bottom-left-radius: 100px; }
+    .section-title h2:after {
+      width: 15px;
+      right: 0;
+      border-top-right-radius: 100px; }
+
+/*# sourceMappingURL=headings.css.map */

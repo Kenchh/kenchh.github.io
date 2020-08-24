@@ -1,0 +1,8 @@
+@import url("../scss/components/helpers/variabls");
+@import url("../scss/components/helpers/mixins");
+@import url("../scss/components/layouts/header");
+@import url("../scss/components/pages/homepages");
+@import url("../scss/components/layouts/footer");
+@import url("../scss/components/buttons");
+
+/*# sourceMappingURL=importstyle.css.map */

@@ -1,0 +1,243 @@
+* {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+body {
+    background-color: #111111;
+}
+
+.header {
+    position: relative;
+    background: url(../images/headerfix.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    color: #888;
+    overflow: hidden;
+    height: 100vh;
+}
+
+section.header.text-center:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: none;
+    background-image: linear-gradient(0deg, #111 0%, rgba(17, 17, 17, 0) 100%);
+    z-index: 1;
+    transform: scale(1.02);
+}
+
+.container.fixOverlay {
+    position: relative;
+    z-index: 30;
+}
+
+.header .overlay {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+}
+
+.header h3 {
+    margin: 30px 0 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: 'Cinzel', serif;
+    font-size: 131px;
+    line-height: 144px;
+    color: #eeece6;
+}
+
+.header .btnblue {
+    min-width: 175px;
+    font-size: 16px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 14px 32px;
+}
+
+.main-demos {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.main-demos h3 {
+    margin-bottom: 60px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 66px;
+    color: #eeece6;
+}
+
+.main-demos .blog-pages h3,
+.main-demos .other-pages h3 {
+    margin-top: 50px;
+}
+
+.main-demos .inner {
+    /*     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .08); */
+    padding: 48px;
+}
+
+.main-demos .inner:hover {}
+
+.main-demos .inner img {
+    width: 100%;
+}
+
+.main-demos .inner h5 {
+    text-transform: capitalize;
+    letter-spacing: .3px;
+    margin-bottom: 0;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    color: #cccccc;
+    margin-top: 18px;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+.demo-features {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.demo-features .item {
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+    margin-bottom: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.demo-features .item h3 {
+    text-transform: capitalize;
+    letter-spacing: .3px;
+    margin-bottom: 0;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    color: #cccccc;
+    margin-top: 18px;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+.intro-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.intro-footer .copyright p {
+    color: #888;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .3px;
+    margin: 0;
+}
+
+.intro-footer .copyright p a {
+    color: #f47514;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt--45 {
+    margin-top: -90px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.inner.brd-right {
+    border-right: 1px solid #232323;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.demo-features h3 {
+    margin-bottom: 60px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 66px;
+    color: #eeece6;
+    margin-top: 50px;
+}
+
+.footerbtm.copyright {
+    padding: 20px;
+    background: #1d1e20;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerbtm span {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #9da1a5;
+    text-transform: capitalize;
+}
+
+.footerbtm a {
+    color: #ff3d4f;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.inner:hover {
+    transform: scale(1.05);
+}

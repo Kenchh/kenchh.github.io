@@ -1,0 +1,114 @@
+/************************** 
+*  Import style
+***************************/
+/************************** 
+* Main Color
+***************************/
+/* 1-  Color */
+/* 2-  Background */
+/* 3-  Border */
+/* Alert */
+/************************** 
+* Dark Home Page one
+***************************/
+/************************** 
+* Light Home Page one
+***************************/
+/************************** 
+* List Color
+***************************/
+/************************** 
+* Border Resume
+***************************/
+/************************** 
+* Main Fonts
+***************************/
+/************************** 
+* Float fixing
+***************************/
+/************************** 
+* Text Align
+***************************/
+/************************** 
+* Font-weight
+***************************/
+/************************** 
+* Transition
+***************************/
+.transition, .top-link {
+  -webkit-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important; }
+
+/************************** 
+* Box Shadow
+***************************/
+.box-shadownone {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/************************** 
+* Box Sizing
+***************************/
+.box-sizing {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/************************** 
+* Transition Transforme
+***************************/
+.transTransforme {
+  -webkit-transition: transform 330ms ease-out;
+  -moz-transition: transform 330ms ease-out;
+  -o-transition: transform 330ms ease-out;
+  transition: transform 330ms ease-out; }
+
+/************************** 
+* Media Queries
+***************************/
+/************************** 
+*  BOTTON SCROLL TO TOP
+***************************/
+.top-link {
+  position: fixed;
+  right: 42px;
+  bottom: 20px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px; }
+  .top-link .fa {
+    font-size: 24px;
+    color: #ffffff; }
+  .top-link.show {
+    visibility: visible;
+    opacity: 1; }
+    @media (max-width: 767px) {
+      .top-link.show {
+        display: none; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .top-link.show {
+        display: none; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .top-link.show {
+        display: none; } }
+  .top-link.hide {
+    visibility: hidden;
+    opacity: 0; }
+  .top-link .screen-reader-text {
+    position: absolute;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px); }
+
+/*# sourceMappingURL=button-To-Top.css.map */

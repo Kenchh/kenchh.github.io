@@ -1,0 +1,225 @@
+/************************** 
+* Import Style
+***************************/
+/************************** 
+* Main Color
+***************************/
+/* 1-  Color */
+/* 2-  Background */
+/* 3-  Border */
+/* Alert */
+/************************** 
+* Dark Home Page one
+***************************/
+/************************** 
+* Light Home Page one
+***************************/
+/************************** 
+* List Color
+***************************/
+/************************** 
+* Border Resume
+***************************/
+/************************** 
+* Main Fonts
+***************************/
+/************************** 
+* Float fixing
+***************************/
+/************************** 
+* Text Align
+***************************/
+/************************** 
+* Font-weight
+***************************/
+/************************** 
+* Transition
+***************************/
+.transition {
+  -webkit-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important; }
+
+/************************** 
+* Box Shadow
+***************************/
+.box-shadownone {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/************************** 
+* Box Sizing
+***************************/
+.box-sizing {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/************************** 
+* Transition Transforme
+***************************/
+.transTransforme {
+  -webkit-transition: transform 330ms ease-out;
+  -moz-transition: transform 330ms ease-out;
+  -o-transition: transform 330ms ease-out;
+  transition: transform 330ms ease-out; }
+
+/************************** 
+* Media Queries
+***************************/
+/************************** 
+* Footer
+***************************/
+#footer {
+  padding: 20px;
+  height: 100%;
+  position: relative; }
+  @media (max-width: 767px) {
+    #footer {
+      padding: 20px 10px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #footer {
+      padding: 20px 10px; } }
+  #footer .line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden; }
+    #footer .line:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 20vh;
+      height: 100%;
+      top: 0;
+      right: -50%;
+      -webkit-animation: run 8s 0s infinite;
+      animation: run 8s 0s infinite;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+      animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97); }
+  #footer .copyright {
+    height: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center; }
+    @media (max-width: 767px) {
+      #footer .copyright {
+        display: inherit;
+        text-align: center;
+        margin-bottom: 30px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #footer .copyright {
+        display: inherit;
+        text-align: center;
+        margin-bottom: 30px; } }
+    #footer .copyright span {
+      margin: 0;
+      font-family: "Saira";
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      color: #9da1a5;
+      text-transform: capitalize; }
+  #footer .news .form-inline {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right; }
+    @media (max-width: 767px) {
+      #footer .news .form-inline {
+        display: inherit;
+        float: none; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #footer .news .form-inline {
+        display: inherit;
+        float: none; } }
+    #footer .news .form-inline span {
+      margin-bottom: 0;
+      margin: 0;
+      font-family: "Saira";
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      color: #9da1a5;
+      text-transform: capitalize;
+      margin-right: 20px; }
+      @media (max-width: 767px) {
+        #footer .news .form-inline span {
+          margin-right: 0;
+          margin-bottom: 10px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        #footer .news .form-inline span {
+          margin-right: 0;
+          margin-bottom: 10px; } }
+    #footer .news .form-inline .form-group {
+      width: 50%;
+      position: relative; }
+      @media (max-width: 767px) {
+        #footer .news .form-inline .form-group {
+          width: 100%;
+          position: relative; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        #footer .news .form-inline .form-group {
+          width: 100%;
+          position: relative; } }
+      #footer .news .form-inline .form-group .form-control {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 39px; }
+      #footer .news .form-inline .form-group .submit {
+        position: absolute;
+        right: 0;
+        padding-right: 20px;
+        padding-left: 0;
+        background: transparent; }
+
+@-webkit-keyframes run {
+  0% {
+    right: -50%; }
+  to {
+    right: 150%; } }
+@keyframes run {
+  0% {
+    right: -50%; }
+  to {
+    right: 150%; } }
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #9da1a5;
+  -webkit-box-shadow: 0 0 0px 1000px #191a1c inset;
+  transition: background-color 5000s ease-in-out 0s; }
+
+div#mc_embed_signup div#mc_embed_signup_scroll .mc-field-group .mce_inline_error {
+  padding: 0;
+  background-color: transparent;
+  z-index: 1;
+  margin-bottom: 0;
+  margin: 0;
+  font-family: "Saira";
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #9da1a5;
+  text-transform: capitalize;
+  width: 100%; }
+
+/*# sourceMappingURL=footer.css.map */

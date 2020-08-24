@@ -1,0 +1,286 @@
+/************************** 
+* Import style
+***************************/
+
+@import 'helpers/variabls.scss';
+
+/************************** 
+* Float fixing
+***************************/
+
+$flot-left: right;
+$flot-right: left;
+
+/************************** 
+* Text Align
+***************************/
+
+$text-left: right;
+$text-center: center;
+$text-right: left;
+
+/************************** 
+* General styling
+***************************/
+
+body {
+    text-align: right;
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section-title {
+    text-align: $text-left !important;
+    h2 {
+        color: $mainColorTwo;
+    }
+}
+
+.text-left {
+    text-align: $text-left!important;
+}
+
+.brd {
+    border-right: none;
+    border-left: 1px solid $brdcolor;
+}
+
+
+/************************** 
+*  Main Navbar
+***************************/
+
+.navbar-wrapper {
+    .navfixed {
+        .container {
+            .fullcontainer {
+                .row {
+                    .col-md-12 {
+                        .iconfix {
+                            .cd-nav-trigger {
+                                text-align: $text-center;
+                                right: auto;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainmenunav {
+        .navbar {
+            padding: 0;
+            .navbar-collapse {
+                li {
+                    text-align: $text-left;
+                    .nav-link {
+                        padding-left: 0px;
+                        padding-right: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/************************** 
+*  Navbar Information
+***************************/
+
+.navinfo {
+    .navfixinfo {
+        text-align: $text-right;
+    }
+}
+
+
+/************************** 
+* Header 
+***************************/
+
+#header {
+    .head-info {
+        .header-content {
+            text-align: $text-left;
+            .subtitle {
+                &:before {
+                    margin-right: 0px;
+                    margin-left: 10px;
+                }
+            }
+            .location {
+                .listlocaion {
+                    li {
+                        float: $flot-left;
+                        &::before {
+                            margin-left: 0px;
+                            margin-right: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/************************** 
+* About Us
+***************************/
+
+#about {
+    .about-blok {
+        .aboutinfo {
+            .about-descr {
+                .separator {
+                    padding-right: 0;
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
+    .skills-bar-container {
+        text-align: $text-left;
+        padding-right: 0;
+        li {
+            .progressbar-title {
+                .percent {
+                    float: $flot-right;
+                }
+            }
+        }
+    }
+}
+
+
+/************************** 
+* Portfolio
+***************************/
+
+#portfolio {
+    .allprojecrt {
+        text-align: $text-right;
+        @media #{$maxMobile} {
+            text-align: $text-left;
+        }
+        @media #{$maxMobile} {
+            text-align: $text-right;
+        }
+    }
+}
+
+
+/************************** 
+* Team
+***************************/
+
+.team {
+    .teamiteam {
+        cursor: pointer;
+        .imgteam {
+            .socials-media {
+                ul {
+                    li {
+                        float: $flot-left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/************************** 
+* journal
+***************************/
+
+#journal {
+    .journal-info {
+        figure {
+            &::before {
+                background: -webkit-linear-gradient(left, rgba($colorLight, 0) 0%, rgba($colorLight, .3) 100%);
+                background: linear-gradient(to $flot-right, rgba($colorLight, 0) 0%, rgba($colorLight, .3) 100%);
+            }
+        }
+    }
+}
+
+
+/************************** 
+* 13. Contact
+***************************/
+
+#contact {
+    .contact-form {
+        padding-left: 0px;
+        padding-right: 80px;
+        @media #{$maxSmall} {
+            padding-right: 0px;
+        }
+    }
+    .socials-media {
+        ul {
+            li {
+                float: $flot-left;
+                .fa {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+/************************** 
+* Header Follow
+***************************/
+
+.header-follow {
+    ul {
+        li {
+            text-align: $text-center;
+        }
+    }
+    p {
+        left: 0;
+        right: -24px;
+    }
+}
+
+
+/************************** 
+* Footer
+***************************/
+
+#footer {
+    .copyright {
+        text-align: $text-center;
+        @media #{$maxMobile} {
+            text-align: $text-center;
+        }
+    }
+    .news {
+        .form-inline {
+            span {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+            .form-group {
+                .form-control {
+                    text-align: $text-left;
+                }
+                .submit {
+                    right: auto;
+                    left: 0;
+                    padding-right: 0;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

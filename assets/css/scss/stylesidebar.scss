@@ -1,0 +1,337 @@
+/************************** 
+* Import Style
+***************************/
+
+@import 'helpers/variabls.scss';
+@import 'helpers/mixins.scss';
+@import 'pages/globalpage.scss';
+@import 'layouts/header.scss';
+@import 'pages/homepages.scss';
+@import 'layouts/footer.scss';
+@import 'components/buttons.scss';
+@import 'components/headings.scss';
+
+/************************** 
+* 1. General Style
+***************************/
+
+body {
+    overflow: auto !important;
+    overflow-x: hidden !important;
+}
+
+
+/************************** 
+* Sidebar Left
+***************************/
+
+.dl-fixed-sidebar {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 9999999;
+    overflow-y: auto;
+    @extend .transition;
+    @media #{$minlarge} {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        -o-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+    &.dl-sidebar-left {
+        left: 0;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        @media #{$minlarge} {
+            -webkit-transform: translateX(0%);
+            -moz-transform: translateX(0%);
+            -o-transform: translateX(0%);
+            transform: translateX(0%);
+            z-index: auto;
+        }
+        &.active {
+            -webkit-transform: translateX(0%);
+            -moz-transform: translateX(0%);
+            -o-transform: translateX(0%);
+            transform: translateX(0%);
+            padding: 0 30px;
+            width: 305px;
+        }
+    }
+    .logo {
+        text-align: $text-center;
+        padding: 35px 0 35px 0px;
+        h1 {
+            font-weight: 400;
+            font-size: 75px;
+        }
+        img {
+            @media #{$minlarge} {
+                max-width: inherit;
+                max-height: 50px;
+                width: auto;
+                margin: 0 20px;
+            }
+        }
+    }
+    .dl-menu-fixed {
+        @media #{$minlarge} {
+            padding-top: 0;
+            padding-bottom: 30px;
+        }
+        ul {
+            margin-bottom: 40px;
+            li {
+                position: relative;
+                a {
+                    font-family: $fontOne;
+                    font-weight: 500;
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 20px;
+                    padding: 10px 0;
+                    padding-left: 30px;
+                    @extend .transition;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .active {
+                    &:after {
+                        content: "";
+                        width: 3px;
+                        height: 100%;
+                        top: auto;
+                        bottom: 0;
+                        right: 0;
+                        position: absolute;
+                        @extend .transition
+                    }
+                }
+            }
+        }
+    }
+    .line {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 15vh;
+            width: 100%;
+            top: -50%;
+            left: 0;
+            -webkit-animation: run2 8s 0s infinite;
+            animation: run2 8s 0s infinite;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-timing-function: cubic-bezier(.4, .26, 0, .97);
+            animation-timing-function: cubic-bezier(.4, .26, 0, .97);
+        }
+    }
+    .content {
+        width: 100%;
+        margin: 0 auto;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: auto;
+        transform: translate(0, 0%);
+    }
+}
+
+.dl-sidebar-left~.dl-fixedsidebar-bg-overlay+.dl-side-content {
+    margin-left: auto;
+}
+
+.dl-side-content {
+    position: relative;
+    @extend .transition;
+    @media #{$minlarge} {
+        width: calc(100% - 300px);
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        -o-transition-duration: 0s;
+        transition-duration: 0s;
+        -webkit-transform: translateX(0%)!important;
+        -moz-transform: translateX(0%)!important;
+        -o-transform: translateX(0%)!important;
+        transform: translateX(0%)!important;
+        margin-left: auto;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 55px;
+        padding: 0 50px;
+        z-index: 99999;
+        text-align: $text-center;
+        -webkit-box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+        @media #{$minlarge} {
+            display: none;
+        }
+        h1 {
+            @media #{$maxLargFix} {
+                color: $colorLight;
+                font-weight: 400;
+                margin: 0;
+                font-size: 30px;
+            }
+        }
+        img {
+            max-width: inherit;
+            max-height: 36px;
+            width: auto;
+        }
+    }
+}
+
+@-webkit-keyframes run2 {
+    0% {
+        top: -50%
+    }
+    to {
+        top: 110%
+    }
+}
+
+@keyframes run2 {
+    0% {
+        top: -50%
+    }
+    to {
+        top: 110%
+    }
+}
+
+
+/************************** 
+* Burger Menu
+***************************/
+
+.dl-burger-menu {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    flex-direction: inherit;
+    justify-content: inherit;
+    width: 50px;
+    height: 55px;
+    padding: 19px 12px;
+    z-index: 9999999;
+    top: 0;
+    right: inherit;
+    left: 0;
+    @extend .transTransforme;
+    @extend .transition;
+    @media #{$minlarge} {
+        display: none;
+    }
+    .inlinelinefix {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 17px;
+        margin-top: 0;
+        margin-bottom: 0;
+        @extend .transTransforme;
+    }
+    .dl-line-menu {
+        background-color: $colorLight;
+        border-radius: 2px;
+        width: 100%;
+        height: 2px;
+        &.dl-line-half {
+            width: 50%;
+        }
+        &.dl-first-line {
+            transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+            transform-origin: right;
+        }
+        &.dl-last-line {
+            align-self: flex-end;
+            transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+            transform-origin: left;
+        }
+    }
+    &.dl-menu-open {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+.dl-fixedsidebar-bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    @extend .transition;
+}
+
+
+/************************** 
+* Main menu Open
+***************************/
+
+.dl-menu-open {
+    .dl-line-menu {
+        &.dl-first-line {
+            -webkit-transform: rotate(-90deg) translateX(5px);
+            -moz-transform: rotate(-90deg) translateX(5px);
+            -o-transform: rotate(-90deg) translateX(5px);
+            transform: rotate(-90deg) translateX(5px);
+        }
+        &.dl-last-line {
+            -webkit-transform: rotate(-90deg) translateX(-5px);
+            -moz-transform: rotate(-90deg) translateX(-5px);
+            -o-transform: rotate(-90deg) translateX(-5px);
+            transform: rotate(-90deg) translateX(-5px);
+        }
+    }
+}
+
+.dl-burger-menu {
+    &.dl-menu-open {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+        .inlinelinefix {
+            -webkit-transform: rotate(-0deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.dl-fixedsidebar-bg-overlay {
+    @media #{$minlarge} {
+        display: none;
+    }
+}

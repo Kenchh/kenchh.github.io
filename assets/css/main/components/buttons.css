@@ -1,0 +1,141 @@
+/************************** 
+*  Import style
+***************************/
+/************************** 
+* Main Color
+***************************/
+/* 1-  Color */
+/* 2-  Background */
+/* 3-  Border */
+/* Alert */
+/************************** 
+* Dark Home Page one
+***************************/
+/************************** 
+* Light Home Page one
+***************************/
+/************************** 
+* List Color
+***************************/
+/************************** 
+* Border Resume
+***************************/
+/************************** 
+* Main Fonts
+***************************/
+/************************** 
+* Float fixing
+***************************/
+/************************** 
+* Text Align
+***************************/
+/************************** 
+* Font-weight
+***************************/
+/************************** 
+* Transition
+***************************/
+.transition, .btn, .btn:hover,
+.btn:focus, .draw:hover {
+  -webkit-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important; }
+
+/************************** 
+* Box Shadow
+***************************/
+.box-shadownone, .btn:hover,
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/************************** 
+* Box Sizing
+***************************/
+.box-sizing {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/************************** 
+* Transition Transforme
+***************************/
+.transTransforme {
+  -webkit-transition: transform 330ms ease-out;
+  -moz-transition: transform 330ms ease-out;
+  -o-transition: transform 330ms ease-out;
+  transition: transform 330ms ease-out; }
+
+/************************** 
+* Media Queries
+***************************/
+/************************** 
+* General style
+***************************/
+.btn {
+  background: #333333;
+  border: medium none;
+  border-radius: 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 500;
+  font-family: "Saira";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize; }
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff; }
+
+/************************** 
+* Button style 1
+***************************/
+.draw {
+  height: 43px;
+  line-height: 43px;
+  position: relative;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: #9da1a5;
+  height: 100%; }
+  .draw:before, .draw:after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    width: 0;
+    height: 0; }
+  .draw::before {
+    top: 0;
+    left: 0; }
+  .draw::after {
+    bottom: 0;
+    right: 0; }
+  .draw .fa {
+    color: #9da1a5;
+    padding-left: 5px;
+    font-size: inherit; }
+  .draw:hover {
+    color: #9da1a5;
+    background: transparent !important; }
+    .draw:hover:before, .draw:hover:after {
+      width: 100%;
+      height: 100%; }
+    .draw:hover:before {
+      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+    .draw:hover:after {
+      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+  .draw:focus {
+    background: transparent !important;
+    color: #9da1a5; }
+
+/*# sourceMappingURL=buttons.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,kDAA0C;AAC1C,gDAAwC;AACxC,gDAAwC;AACxC,iDAAyC;AACzC,gDAAwC;AACxC,yCAAiC",
+"sources": ["../scss/importstyle.scss"],
+"names": [],
+"file": "importstyle.css"
+}
