@@ -81,8 +81,6 @@ body {
 .hvr-shutter-in-horizontal {
   border: 1px solid #dadceb;
   color: #ffffff; }
-  .hvr-shutter-in-horizontal:hover i {
-    color: !important; }
 
 .draw {
   border: 1px solid #dadceb !important; }

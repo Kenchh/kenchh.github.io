@@ -2710,21 +2710,21 @@ span#typed-slide-1 {
           animation-timing-function: ease-out;
           -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
-        #about .skills-bar-container li .bar-container #progress-html {
-          -webkit-animation-name: progress-html;
-          animation-name: progress-html;
+        #about .skills-bar-container li .bar-container #progress-spigot {
+          -webkit-animation-name: progress-spigot;
+          animation-name: progress-spigot;
           -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
           margin: 0; }
-        #about .skills-bar-container li .bar-container #progress-css {
-          -webkit-animation-name: progress-css;
-          animation-name: progress-css;
+        #about .skills-bar-container li .bar-container #progress-nms {
+          -webkit-animation-name: progress-nms;
+          animation-name: progress-nms;
           -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
           margin: 0; }
-        #about .skills-bar-container li .bar-container #progress-javascript {
-          -webkit-animation-name: progress-javascript;
-          animation-name: progress-javascript;
+        #about .skills-bar-container li .bar-container #progress-database {
+          -webkit-animation-name: progress-database;
+          animation-name: progress-database;
           -webkit-animation-delay: 2.1s;
           animation-delay: 2.1s;
           margin: 0; }
