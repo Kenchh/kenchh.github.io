@@ -2728,6 +2728,12 @@ span#typed-slide-1 {
           -webkit-animation-delay: 2.1s;
           animation-delay: 2.1s;
           margin: 0; }
+        #about .skills-bar-container li .bar-container #progress-bungee {
+          -webkit-animation-name: progress-bungee;
+          animation-name: progress-bungee;
+          -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+          margin: 0; }
         #about .skills-bar-container li .bar-container #progress-php {
           -webkit-animation-name: progress-php;
           animation-name: progress-php;
