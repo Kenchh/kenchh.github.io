@@ -2073,6 +2073,10 @@ a:focus,
   -o-transition: all .5s ease-in-out !important;
   transition: all .5s ease-in-out !important; }
 
+.exp-title {
+  margin-top: 40px;
+}
+
 /************************** 
 * Box Shadow
 ***************************/
@@ -2993,7 +2997,7 @@ span#typed-slide-1 {
       margin-top: 0; } }
 
 .res-line {
-  margin-top: 40px;
+  margin-top: 5px;
   width: 100px;
   height: 3px;
   background: #ff3d4f; }
