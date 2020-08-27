@@ -248,14 +248,13 @@ function fadeOut() {
     TweenMax.to(".myBtn", 1, {
         y: -100,
         opacity: 0
-
     });
 
     TweenMax.to(".screen", 2, {
         y: -400,
         opacity: 0,
         ease: Power2.easeInOut,
-        delay: 2
+        delay: 0.1
 
     });
 
@@ -265,13 +264,13 @@ function fadeOut() {
     });
 
     TweenMax.to(".overlay-1", 2, {
-        delay: 2.6,
+        delay: 0.1,
         top: "-110%",
         ease: Expo.easeInOut,
     });
 
     TweenMax.to(".overlay-2", 2, {
-        delay: 3,
+        delay: 0.1,
         top: "-110%",
         ease: Expo.easeInOut,
 
@@ -279,7 +278,7 @@ function fadeOut() {
 
 
     TweenMax.from(".content", 2, {
-        delay: 3.2,
+        delay: 0.1,
         opacity: 0,
         ease: Power2.easeInOut,
 
@@ -288,14 +287,14 @@ function fadeOut() {
     TweenMax.to(".content", 2, {
         opacity: 1,
         y: 0,
-        delay: 3.2,
+        delay: 0.1,
         ease: Power2.easeInOut,
 
     });
 
     TweenMax.to("body", 2, {
         'overflow-y': 'scroll',
-        delay: 4,
+        delay: 1.5,
         ease: Power2.easeInOut,
 
     });

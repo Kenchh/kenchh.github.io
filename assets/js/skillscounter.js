@@ -5,9 +5,9 @@
 function skillsProgress() {
     var lang = {
         "spigot": "95%",
-        "nms": "75%",
+        "nms": "70%",
         "database": "55%",
-        "bungee": "70%"
+        "bungee": "75%"
     };
 
     var multiply = 2;

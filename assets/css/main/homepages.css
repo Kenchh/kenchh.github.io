@@ -2895,9 +2895,6 @@ span#typed-slide-1 {
       height: 435px;
       overflow: hidden;
       cursor: pointer; }
-      #portfolio .portfolio-item .portfolio-thumbnail:hover .top-thumbnail img {
-        -webkit-filter: blur(3px);
-        filter: blur(3px); }
       #portfolio .portfolio-item .portfolio-thumbnail:hover .botom-thumbnail {
         margin-bottom: -98px; }
       #portfolio .portfolio-item .portfolio-thumbnail .top-thumbnail {
@@ -3245,7 +3242,7 @@ span#typed-slide-1 {
   width: 20px;
   height: 200px;
   position: fixed;
-  margin-top: -100px;
+  margin-top: -20px;
   z-index: 99; }
   @media (max-width: 767px) {
     .header-follow {
