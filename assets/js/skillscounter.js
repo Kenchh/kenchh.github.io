@@ -7,7 +7,8 @@ function skillsProgress() {
         "spigot": "95%",
         "nms": "70%",
         "database": "55%",
-        "bungee": "75%"
+        "bungee": "75%",
+        "gitmaven": "90%"
     };
 
     var multiply = 2;
