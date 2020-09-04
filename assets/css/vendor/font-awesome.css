@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url('../../fonts/fa-brands-400.woff?v=5.14.0') format('woff');
+    src: url('../../fonts/fontawesome-webfont.woff?v=5.14.0') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -823,6 +823,10 @@
 
 .fa-github:before {
     content: "\f09b";
+}
+
+.fa-mcmarket:before {
+    background-image: url("/assets/images/mcm.png");
 }
 
 .fa-unlock:before {
