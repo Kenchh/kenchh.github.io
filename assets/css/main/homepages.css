@@ -2681,7 +2681,7 @@ span#typed-slide-1 {
     width: 110px;
     position: absolute; }
   #about .about-blok {
-    height: 100%;
+    height: 22%;
     overflow: hidden; }
     #about .about-blok .aboutinfo {
       display: flex;
@@ -2694,7 +2694,7 @@ span#typed-slide-1 {
         #about .about-blok .aboutinfo {
           display: initial; } }
       #about .about-blok .aboutinfo .about-img {
-        padding: 15px;
+        padding: 5px;
         overflow: hidden;
         height: auto; }
         #about .about-blok .aboutinfo .about-img::before {
